@@ -1,0 +1,75 @@
+[0m14:32:27.126611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df02ae52270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df02cd1ca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df0297b3890>]}
+
+
+============================== 14:32:27.135687 | c78bc32b-981c-40a8-a20a-c255b4577b05 ==============================
+[0m14:32:27.135687 [info ] [MainThread]: Running with dbt=1.12.4
+[0m14:32:27.136394 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'maximum_seed_size_mib': '1', 'log_path': 'logs', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'hints_enabled': 'True', 'quiet': 'False', 'no_print': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/home/codespace/.dbt', 'static_parser': 'True', 'invocation_command': 'dbt init northwind_dw_duckdb', 'indirect_selection': 'eager', 'write_json': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'introspect': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False'}
+[0m14:32:27.146347 [info ] [MainThread]: Creating dbt configuration folder at /home/codespace/.dbt
+[0m14:32:27.147636 [debug] [MainThread]: Starter project path: /workspaces/DW_lab_673020243-5/.venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m14:32:27.151838 [info ] [MainThread]: Setting up your profile.
+[0m14:32:32.391442 [info ] [MainThread]: Profile northwind_dw_duckdb written to /home/codespace/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m14:32:32.392908 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m14:32:32.393573 [info ] [MainThread]: dbt version: 1.12.4
+[0m14:32:32.393999 [info ] [MainThread]: python version: 3.14.2
+[0m14:32:32.394433 [info ] [MainThread]: python path: /workspaces/DW_lab_673020243-5/.venv/bin/python3
+[0m14:32:32.394840 [info ] [MainThread]: os info: Linux-6.8.0-1052-azure-x86_64-with-glibc2.39
+[0m14:32:32.461080 [info ] [MainThread]: Using profiles dir at /home/codespace/.dbt
+[0m14:32:32.461824 [info ] [MainThread]: Using profiles.yml file at /home/codespace/.dbt/profiles.yml
+[0m14:32:32.462373 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/DW_lab_673020243-5/northwind_dw_duckdb/dbt_project.yml
+[0m14:32:32.464124 [info ] [MainThread]: adapter type: duckdb
+[0m14:32:32.464596 [info ] [MainThread]: adapter version: 1.11.0
+[0m14:32:32.593919 [info ] [MainThread]: Configuration:
+[0m14:32:32.594620 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:32:32.595079 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:32:32.595527 [info ] [MainThread]: Required dependencies:
+[0m14:32:32.595978 [debug] [MainThread]: Executing "git --help"
+[0m14:32:32.598670 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:32:32.599151 [debug] [MainThread]: STDERR: "b''"
+[0m14:32:32.599559 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:32:32.599988 [info ] [MainThread]: Connection:
+[0m14:32:32.600575 [info ] [MainThread]:   database: dev
+[0m14:32:32.600984 [info ] [MainThread]:   schema: main
+[0m14:32:32.601704 [info ] [MainThread]:   path: dev.duckdb
+[0m14:32:32.603165 [info ] [MainThread]:   config_options: None
+[0m14:32:32.603595 [info ] [MainThread]:   extensions: None
+[0m14:32:32.604000 [info ] [MainThread]:   settings: {}
+[0m14:32:32.604428 [info ] [MainThread]:   external_root: .
+[0m14:32:32.604819 [info ] [MainThread]:   use_credential_provider: None
+[0m14:32:32.605229 [info ] [MainThread]:   attach: None
+[0m14:32:32.605652 [info ] [MainThread]:   filesystems: None
+[0m14:32:32.606060 [info ] [MainThread]:   remote: None
+[0m14:32:32.606510 [info ] [MainThread]:   plugins: None
+[0m14:32:32.606964 [info ] [MainThread]:   disable_transactions: False
+[0m14:32:32.607886 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m14:32:32.735666 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m14:32:32.763342 [debug] [MainThread]: Using duckdb connection "debug"
+[0m14:32:32.763796 [debug] [MainThread]: On debug: select 1 as id
+[0m14:32:32.764196 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:32:32.778410 [debug] [MainThread]: SQL status: OK in 0.014 seconds
+[0m14:32:32.779375 [debug] [MainThread]: On debug: Close
+[0m14:32:32.779807 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:32:32.780298 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:32:32.780739 [info ] [MainThread]: Your new dbt project "northwind_dw_duckdb" was created!
+Initialized new project in /workspaces/DW_lab_673020243-5/northwind_dw_duckdb/northwind_dw_duckdb
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:32:32.782334 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 5.7434063, "process_in_blocks": "536", "process_kernel_time": 0.345127, "process_mem_max_rss": "161212", "process_out_blocks": "104", "process_user_time": 1.905184}
+[0m14:32:32.783030 [debug] [MainThread]: Command `dbt init` succeeded at 14:32:32.782881 after 5.74 seconds
+[0m14:32:32.783730 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:32:32.784191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df0299da780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df0248f15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df024827790>]}
+[0m14:32:32.784670 [debug] [MainThread]: Flushing usage events
+[0m14:32:33.802583 [debug] [MainThread]: An error was encountered while trying to flush usage events
